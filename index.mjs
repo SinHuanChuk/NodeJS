@@ -12,7 +12,7 @@ program.parse(process.argv);
 const argv = program.opts();
 
 const invokeAction = ({ action, id, name, email, phone }) => {
-  switch (argv.action) {
+  switch (action) {
     case "list":
       readFile();
       break;
