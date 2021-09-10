@@ -15,8 +15,8 @@ export const getUser = (id) =>
   });
 
 export const addUser = (name, email, phone) =>
-  fs.readFile("./data.json").then((res) => {
-    const contacts = JSON.parse(res);
+  fs.readFile("./data.json").then((data) => {
+    const contacts = JSON.parse(data);
 
     const newUser = {
       id: contacts.length + 1,
